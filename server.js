@@ -15,6 +15,16 @@ server.use(
  })
 );
 server.use(router);
+
+// Definindo uma rota para lidar com requisições inválidas
+server.use((req, res, next) => {
+  if (req.method === 'GET' && req.url === '/') {
+    res.status(404).json({ error: 'Rota não encontrada' });
+  } else {
+    next(); // Prossegue para a próxima middleware
+  }
+});
+
 // Listen to port
 server.listen(3000, () => {
  console.log("JSON Server is running");
