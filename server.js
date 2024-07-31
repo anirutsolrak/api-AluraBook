@@ -1,10 +1,18 @@
-// JSON Server module
-const jsonServer = require("json-server");
-const server = jsonServer.create();
-const router = jsonServer.router("db.json");
+const jsonServer = require('json-server');
+const fs = require('fs');
+const path = require('path');
 
-// Make sure to use the default middleware
+// Ler o conteúdo de db.json
+const db = JSON.parse(fs.readFileSync(path.join(__dirname, 'db.json')));
+
+// Configurar o roteamento
+const router = jsonServer.router(db); // Passar os dados lidos para o router
+
+// Usar o middleware padrão
 const middlewares = jsonServer.defaults();
+
+// Criar o servidor
+const server = jsonServer.create();
 
 server.use(middlewares);
 
