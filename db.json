@@ -48,5 +48,17 @@
       "imagem": "https://books.google.com.br/books/publisher/content?id=y4QDDQAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2KDWJKMebYcJP-j1xKWR4PhQ9ckg&w=1280",
       "valor": 45.00
     }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Fantasia",
+      "visivel": true 
+    },
+    {
+      "id": 2,
+      "nome": "Ficção Científica",
+      "visivel": true
+    },
   ]
 }
