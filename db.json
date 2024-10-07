@@ -53,12 +53,12 @@
     {
       "id": 7,
       "nome": "Fantasia",
-      {"visivel": true }
+      {visivel: true }
     },
     {
       "id": 8,
       "nome": "Ficção Científica",
-      {"visivel": true}
+      {visivel: true}
     },
   ]
 }
