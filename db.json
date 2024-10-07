@@ -51,12 +51,12 @@
   ],
   "categorias": [
     {
-      "id": 1,
+      "id": 7,
       "nome": "Fantasia",
       "visivel": true 
     },
     {
-      "id": 2,
+      "id": 8,
       "nome": "Ficção Científica",
       "visivel": true
     },
